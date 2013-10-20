@@ -1,0 +1,26 @@
+# vim: set filetype: py
+
+import os
+
+def runCommand(cmd):
+	import subprocess
+	try:
+		p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+		(output, err) = p.communicate()
+		return output
+	except Exception,e:
+		print e
+		return ""
+		
+env=Environment(ENV = os.environ)
+env.Append(CCFLAGS = ['-Wall', '-I./gen-cpp'])
+env.Append(LIBPATH = ['.'])
+env.Append(LIBS = ['thrift', 'multiplex_demo'])
+
+os.system("thrift --gen cpp multiplex_demo.thrift")
+
+env.Library("multiplex_demo.a", ['gen-cpp/FirstService.cpp', 'gen-cpp/SecondService.cpp', \
+                                 'gen-cpp/multiplex_demo_constants.cpp', 'gen-cpp/multiplex_demo_types.cpp'])
+env.Program('server_demo', ['server_demo.cpp'])
+env.Program('client_demo', ['client_demo.cpp'])
+
