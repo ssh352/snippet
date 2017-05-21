@@ -1,0 +1,24 @@
+{% extends "bootstrap/base.html" %}
+
+{% block metas %}
+{{ super() }}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">FlaskDemo</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/demo">demo</a></li>
+            {% if current_user.is_authenticated() %}
+            	<li><a href="#">logout</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    </div>
+</nav>
+{% endblock %}

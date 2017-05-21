@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskDemo</title>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

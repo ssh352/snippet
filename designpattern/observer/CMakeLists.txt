@@ -1,0 +1,5 @@
+PROJECT(dp_observer)
+SET(SRC_LIST main.cpp subject.cpp)
+include_directories(../)
+SET(CMAKE_CXX_STANDARD 11)
+ADD_EXECUTABLE(dp_observer ${SRC_LIST})

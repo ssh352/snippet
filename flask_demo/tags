@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Admin	flask_dashed_demo.py	/^from flask_dashed.admin import Admin$/;"	kind:namespace	line:11
+Flask	flask_dashed_demo.py	/^from flask import Flask$/;"	kind:namespace	line:10
+Flask	flask_demo.py	/^from flask import Flask, render_template, request, redirect, make_response, render_template_string$/;"	kind:namespace	line:2
+Flask	model/testsql.py	/^from flask import Flask$/;"	kind:namespace	line:1
+Flask	model/user.py	/^from flask import Flask$/;"	kind:namespace	line:1
+SQLAlchemy	model/testsql.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind:namespace	line:2
+SQLAlchemy	model/user.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind:namespace	line:3
+TestSQL	model/testsql.py	/^class TestSQL(db.Model):$/;"	kind:class	line:8
+User	model/user.py	/^class User(db.Model):$/;"	kind:class	line:9
+__init__	model/testsql.py	/^    def __init__(self, userid, mobile, arrivedate, adddate):$/;"	kind:member	line:17
+__init__	model/user.py	/^    def __init__(self, username, email):$/;"	kind:member	line:14
+__init__.py	model/__init__.py	1;"	kind:file	line:1
+__repr__	model/testsql.py	/^    def __repr__(self):$/;"	kind:member	line:23
+__repr__	model/user.py	/^    def __repr__(self):$/;"	kind:member	line:18
+__tablename__	model/testsql.py	/^    __tablename__ = 'TestSQL'$/;"	kind:variable	line:9
+adddate	model/testsql.py	/^    adddate = db.Column('AddDate', db.DateTime)$/;"	kind:variable	line:14
+admin	flask_dashed_demo.py	/^admin = Admin(app)$/;"	kind:variable	line:14
+app	flask_dashed_demo.py	/^app = Flask(__name__)$/;"	kind:variable	line:13
+app	flask_demo.py	/^app = Flask(__name__)$/;"	kind:variable	line:8
+app	model/testsql.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
+app	model/user.py	/^app = Flask(__name__)$/;"	kind:variable	line:5
+arrivedate	model/testsql.py	/^    arrivedate = db.Column('ArriveDate', db.DateTime)$/;"	kind:variable	line:13
+cookies_demo	flask_demo.py	/^def cookies_demo():$/;"	kind:function	line:41
+data	flask_demo.py	/^data = [$/;"	kind:variable	line:81
+db	model/testsql.py	/^db = SQLAlchemy(app)$/;"	kind:variable	line:6
+db	model/user.py	/^db = SQLAlchemy(app)$/;"	kind:variable	line:7
+email	model/user.py	/^    email = db.Column(db.String(80), unique=True)$/;"	kind:variable	line:12
+escape	flask_demo.py	/^def escape():$/;"	kind:function	line:74
+flask	flask_demo.py	/^import flask$/;"	kind:namespace	line:5
+flask	model/user.py	/^import flask$/;"	kind:namespace	line:2
+flask_dashed_demo.py	flask_dashed_demo.py	1;"	kind:file	line:1
+flask_demo.py	flask_demo.py	1;"	kind:file	line:1
+for_loop	flask_demo.py	/^def for_loop():$/;"	kind:function	line:88
+format_price	flask_demo.py	/^    def format_price(amout, currency=u'$'):$/;"	kind:function	line:69
+genius	flask_demo.py	/^def genius():$/;"	kind:function	line:52
+get_user	flask_demo.py	/^def get_user():$/;"	kind:function	line:30
+hello_world	flask_demo.py	/^def hello_world():$/;"	kind:function	line:13
+id	model/testsql.py	/^    id = db.Column('ID', db.Integer, primary_key=True)$/;"	kind:variable	line:10
+id	model/user.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
+init_testsql	flask_demo.py	/^def init_testsql():$/;"	kind:function	line:17
+make_response	flask_demo.py	/^from flask import Flask, render_template, request, redirect, make_response, render_template_string$/;"	kind:namespace	line:2
+mobile	model/testsql.py	/^    mobile = db.Column('Mobile', db.String(18))$/;"	kind:variable	line:12
+randint	flask_demo.py	/^from random import randint$/;"	kind:namespace	line:6
+redirect	flask_demo.py	/^from flask import Flask, render_template, request, redirect, make_response, render_template_string$/;"	kind:namespace	line:2
+render_template	flask_demo.py	/^from flask import Flask, render_template, request, redirect, make_response, render_template_string$/;"	kind:namespace	line:2
+render_template_string	flask_demo.py	/^from flask import Flask, render_template, request, redirect, make_response, render_template_string$/;"	kind:namespace	line:2
+request	flask_demo.py	/^from flask import Flask, render_template, request, redirect, make_response, render_template_string$/;"	kind:namespace	line:2
+testsql	flask_demo.py	/^from model import testsql$/;"	kind:namespace	line:4
+testsql.py	model/testsql.py	1;"	kind:file	line:1
+updatetime	model/testsql.py	/^    updatetime = db.Column('UpdateTime', db.TIMESTAMP)$/;"	kind:variable	line:15
+user	flask_demo.py	/^from model import user$/;"	kind:namespace	line:3
+user.py	model/user.py	1;"	kind:file	line:1
+userid	model/testsql.py	/^    userid = db.Column('UserID', db.Integer)$/;"	kind:variable	line:11
+username	model/user.py	/^    username = db.Column(db.String(80), unique=True)$/;"	kind:variable	line:11
+utility_processor	flask_demo.py	/^def utility_processor():$/;"	kind:function	line:68
+v_index	flask_demo.py	/^def v_index():$/;"	kind:function	line:59
+v_user_friend	flask_demo.py	/^def v_user_friend(uname, fname):$/;"	kind:function	line:37
