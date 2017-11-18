@@ -1,5 +1,9 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.5)
 project(boost.python_demo)
+IF (APPLE)
+    SET(CMAKE_CXX_COMPILER "/usr/local/bin/g++")
+ENDIF()
+
 SET( CMAKE_VERBOSE_MAKEFILE on )
 SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -g")
 include_directories(/data/billowqiu/3rdlib/include/)
@@ -18,5 +22,4 @@ add_library(${extending_so} SHARED extending.cpp)
 target_link_libraries(${extending_so} boost_python pthread dl)
 set_target_properties(${extending_so} PROPERTIES PREFIX "")
 set_target_properties(${extending_so} PROPERTIES OUTPUT_NAME "extending")
-
 
