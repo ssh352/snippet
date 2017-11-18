@@ -19,4 +19,13 @@ target_link_libraries(${extending_so} boost_python pthread dl)
 set_target_properties(${extending_so} PROPERTIES PREFIX "")
 set_target_properties(${extending_so} PROPERTIES OUTPUT_NAME "extending")
 
+add_library(vector_indexing_suite SHARED vector_indexing_suite.cpp)
+target_link_libraries(vector_indexing_suite boost_python pthread dl)
+set_target_properties(vector_indexing_suite PROPERTIES PREFIX "")
+set_target_properties(vector_indexing_suite PROPERTIES OUTPUT_NAME "vector_indexing_suite_ext")
+
+add_library(pytype_function SHARED pytype_function.cpp)
+target_link_libraries(pytype_function boost_python pthread dl)
+set_target_properties(pytype_function PROPERTIES PREFIX "")
+set_target_properties(pytype_function PROPERTIES OUTPUT_NAME "pytype_function_ext")
 
