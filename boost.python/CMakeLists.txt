@@ -32,3 +32,8 @@ add_library(pytype_function SHARED pytype_function.cpp)
 target_link_libraries(pytype_function boost_python pthread dl)
 set_target_properties(pytype_function PROPERTIES PREFIX "")
 set_target_properties(pytype_function PROPERTIES OUTPUT_NAME "pytype_function_ext")
+
+add_library(datetime_convert SHARED datetime_convert.cpp)
+target_link_libraries(datetime_convert boost_python pthread dl)
+set_target_properties(datetime_convert PROPERTIES PREFIX "")
+set_target_properties(datetime_convert PROPERTIES OUTPUT_NAME "datetime_convert")
